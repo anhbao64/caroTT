@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caro AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu" class="menu">
+        <h2>Choose Your Game Mode</h2>
+
+        <button class="mode-btn" onclick="startPvP()">Player vs Player</button>
+
+        <p>Player vs Computer</p>
+        <button class="mode-btn" onclick="startPVC('X')">Play as X</button>
+        <button class="mode-btn" onclick="startPVC('O')">Play as O</button>
+    </div>
+
+    <div id="game" class="game-container hide">
+        <div class="info-panel">
+
+            <div class="turn-container">
+                <h3>Turn For</h3>
+                <div class="turn-box">X</div>
+                <div class="turn-box">O</div>
+            </div>
+
+            <h2 id="result"></h2>
+            <button id="play-again" onclick="restartGame()">Play Again</button>
+        </div>
+
+        <div id="board" class="main-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
