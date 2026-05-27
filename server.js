@@ -1,8 +1,19 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const path = require('path');
 
-app.use(express.static(__dirname))
+const app = express();
 
-app.listen(8080, () => {
-    console.log('Server chạy tại http://localhost:8080')
-})
+// Static files
+app.use(express.static(path.join(__dirname)));
+
+// Route chính
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Port cho local và deploy
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log(`Server chạy tại cổng ${PORT}`);
+});

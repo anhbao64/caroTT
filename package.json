@@ -1,15 +1,14 @@
 {
-  "name": "carottnt",
-  "version": "1.0.0",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^5.2.1"
-  }
+    "name": "carottnt",
+    "version": "1.0.0",
+    "description": "Game Caro AI using Minimax Algorithm",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^5.2.1"
+    }
 }
