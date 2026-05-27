@@ -94,3 +94,38 @@ body {
 .box:hover {
     background-color: #FF2E63;
 }
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .info-panel {
+        width: 100%;
+    }
+     :root {
+        --cell-size: 22px;
+    }
+    .main-grid {
+        overflow: auto;
+        touch-action: manipulation;
+    }
+    .box {
+        font-size: 14px;
+    }
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+    .mode-btn {
+        width: 90%;
+    }
+}
